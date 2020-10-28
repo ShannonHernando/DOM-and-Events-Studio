@@ -1,6 +1,6 @@
 window.onload = (event) => {
 
-    const takeoff = document.querySelector("#takeoff");
+    const takeoff = document.querySelector('#takeoff');
     const landing = document.querySelector('#landing');
     const abort = document.querySelector('#missionAbort');
 
@@ -39,20 +39,20 @@ window.onload = (event) => {
             shuttleHeight.innerHTML = 0;
         }
     })
-let rocket Image - document.getElementById("rocket");
+
+let rocketImage = document.getElementById("rocket");
     rocketImage.style.position = "realative"; 
     rocketImage.style.top = "20px"; 
     rocketImage.style.left = "20px"; 
     rocketImage.style.visibility = "visable"; 
     
-    let vertPosString = rocketImage.style.top
+    let vertPosString = rocketImage.style.top;
     let vertPos = Number(vertPosString.split('px')[0]);
     let horizonPosString = rocketImage.style.left;
     let horizonPos = Number(horizonPosString.split('px')[0]);
 
-up.addEventListener('click', (event)=> {
-    if(vertPos > -10)
-    vertPos -= 10;
+up.addEventListener('click', (event) => {
+    if(vertPos > -10) vertPos -= 10;
     rocketImage.style.top = `${vertPos}px`;
     height += 10000
     shuttleHeight.innerHTML = height;
